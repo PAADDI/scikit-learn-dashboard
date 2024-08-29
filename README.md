@@ -12,7 +12,7 @@ A web based machine learning dashboard with the following features: preprocessin
 
 ### Demo
 
-<a href="[https://abraham-atsiwo.github.io/#portfolio](https://paaddi.github.io/pius_addi/)">View Demo and Other Projects</a>
+<a href="[https://paaddi.github.io/pius_addi/]">View Demo and Other Projects</a>
 ![sklearn_dashboard1](https://user-images.githubusercontent.com/17193991/185836418-50c51e5a-be42-41e4-8f7d-a618d71f9518.png)
 
 ![sklearn_dashboard2](https://user-images.githubusercontent.com/17193991/185836598-9966800c-1bb1-4820-b557-e775cafaa38b.png)
