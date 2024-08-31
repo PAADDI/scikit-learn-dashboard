@@ -3,6 +3,7 @@ backcall
 Brotli
 click
 dash
+gunicorn
 dash-core-components
 dash-html-components
 dash-table
