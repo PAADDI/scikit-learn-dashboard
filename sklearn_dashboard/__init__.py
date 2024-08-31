@@ -27,6 +27,7 @@ external_stylesheets = [
 app = Dash(__name__,
                 external_scripts=external_scripts,
                 external_stylesheets=external_stylesheets)
+server=app.server
 app.title = "sklearn-dashboard"
 app.suppress_callback_exceptions = True
 
