@@ -1,0 +1,102 @@
+.model-wrapper{
+    display: grid;
+    grid-area: model_content;
+    grid-template-areas: "header"
+                         "error"
+                         "model_description"
+                         "model_graph";
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+
+.error {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: error;
+    min-height: 30px;
+}
+
+
+.error-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.error-time {
+    background: orange;
+}
+
+.model-header {
+    display: grid;
+    width: 100%;
+    grid-area: header;
+
+}
+
+.model-description {
+    display: flex;
+    width: 100%;
+    grid-area: model_description;
+    min-height: 50px;
+    flex-direction: column;
+}
+
+.model-graph {
+    display: none;
+    width: 100%;
+    grid-area: model_graph;
+    grid-template-areas: "model_graph_others"
+                         "model_graph_prediction";
+    min-height: 400px;
+}
+
+.model-graph-prediction {
+    grid-area: model_graph_prediction;
+    min-height: 300px;
+}
+
+.model-graph-others {
+    grid-area: model_graph_others;
+
+}
+
+
+
+@media screen and (min-width: 800px){
+    .model-header {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .error {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .model-graph {
+        display: grid;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .model-wrapper{
+        display: grid;
+        grid-area: model_content;
+        grid-template-areas: "header header"
+                             "error error"
+                             "model_description model_graph";
+        grid-template-columns: 30% 70%;
+        width: 100%;
+        flex-wrap: wrap;
+        min-height: 100px;
+    }
+
+    #model_graph_others, #model_graph_prediction {
+        width: 100%;
+    }
+}
+

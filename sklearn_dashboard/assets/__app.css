@@ -1,0 +1,93 @@
+
+body {
+    background: var(--clr-primary-9);
+}
+
+.model-container {
+    display: grid; 
+    margin: 70px auto 0 auto;
+    width: 98%;
+    width: 80%;
+    max-width: var(--max-width);
+    overflow-x: hidden;
+
+}
+
+.model-content{
+    display: grid;
+    height: 100%;
+    width: 100%;  
+    row-gap: 10px;
+    grid-template-areas: "estimator_info"
+                         "load_dataset_error"
+                         "load_dataset"
+                         "preprocessing"
+                         "pipeline"
+                         "output_datatable"
+                         "other_preprocessing"
+                         "model_content";
+    
+}
+
+.model-content-item {
+    display: flex;
+    width: 100%;
+    background: var(--clr-black);
+    flex-direction: column;
+}
+
+.model-content-header {
+    display: flex;
+    padding-top: 5px;
+    background: var(--clr-grey-5);
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+
+    .model-container {
+        width: 98%;
+    
+    }  
+
+    .model-content{  
+        grid-template-areas:  "estimator_info estimator_info estimator_info"
+                              "load_dataset_error load_dataset_error load_dataset_error"
+                              "load_dataset preprocessing pipeline"
+                              "output_datatable output_datatable other_preprocessing"
+                              "model_content model_content model_content";
+                              
+        grid-template-columns: 2fr 2fr 4fr;
+        column-gap: 10px;
+    }
+
+    .model-content-item {
+        display: flex;
+        box-shadow: 3px 3px black;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .model-content-header {
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        background: var(--clr-grey-5);
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    
+
+}
+
+
+
